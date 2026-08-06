@@ -1,0 +1,24 @@
+oscar_movies = [
+    "The Dark Knight", 
+    "The Hurt Locker",  
+    "The King's Speech", 
+    "The Artist",     
+    "Argo"
+]
+oscar_years = [2008, 2009, 2010, 2011, 2012]
+oscar_revenue = [1005, 170, 427, 133, 232]  # in $M
+plt.plot(oscar_years,oscar_revenue)
+plt.title("osacar movie revenue in each year")
+plt.xlabel("year")
+plt.ylabel("revenue in $M")
+
+  non_oscar_movies = ["Slumdog Millionaire","Avatar","Inception","Hugo","Lincoln"]
+non_oscar_revenue = [378, 2788, 829, 185, 275]  # in $M
+plt.plot(oscar_years,oscar_revenue,label = "oscar_movie")
+plt.plot(oscar_years,non_oscar_revenue,label = "non_oscar_movie")
+plt.title("oscar vs non_oscar_movie revenue")
+plt.xlabel("year")
+plt.ylabel("revenue in $M")
+plt.legend()
+
+  
