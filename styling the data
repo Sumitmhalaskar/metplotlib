@@ -1,0 +1,27 @@
+plt.plot(oscar_years, oscar_revenue, label="Oscar Winners")
+plt.plot(non_oscar_years, non_oscar_revenue,color = "red", label="Non-Oscar Winners")
+plt.title("Years vs Revenue(in $M)")
+plt.xlabel("Years")
+plt.ylabel("Revenue(in $M)")
+# plt.style.use("dark_background")
+plt.style.use("ggplot")
+plt.legend()
+# plt.style.use("dark_background")
+
+
+oscar_movies = [
+    "The Dark Knight", 
+    "The Hurt Locker",  
+    "The King's Speech", 
+    "The Artist",     
+    "Argo"
+]
+oscar_years = [2008, 2009, 2010, 2011, 2012]
+oscar_revenue = [1005, 170, 427, 133, 232]  # in $M
+plt.style.use("default")
+plt.plot(oscar_movies,oscar_revenue)
+plt.title("Movie Revenue")
+plt.xlabel("Movie")
+plt.ylabel("Revenue")
+plt.tight_layout()
+plt.savefig("abc.png")
