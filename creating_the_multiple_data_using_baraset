@@ -1,0 +1,45 @@
+# compare the two dataset using the bar chart 
+import numpy as np
+# oscar_movies = [
+#     "The Dark Knight", 
+#     "The Hurt Locker",  
+#     "The King's Speech", 
+#     "The Artist",     
+#     "Argo"
+# ]
+# years = [2008, 2009, 2010, 2011, 2012]
+# oscar_revenue = [1005, 170, 427, 133, 232]  # in $M
+# non_oscar_movies = ["Slumdog Millionaire","Avatar","Inception","Hugo","Lincoln"]
+# non_oscar_revenue = [378, 2788, 829, 185, 275]  # in $M
+# width = 0.4
+# x = np.arange(len(years))
+# # plt.figure(figsize=(10, 6))
+# plt.bar( x -  width/2,oscar_revenue,width)
+# plt.bar(x  +  width/2,years,non_oscar_revenue,width)
+# plt.legend()
+# plt.title("oscar_movie vs non_osacar_movie")
+# plt.xlabel("year")
+# plt.ylabel("revenue $(M)")
+oscar_movies = [
+    "The Dark Knight", 
+    "The Hurt Locker",  
+    "The King's Speech", 
+    "The Artist",     
+    "Argo"
+]
+years = [2008, 2009, 2010, 2011, 2012]
+oscar_revenue = [1005, 170, 427, 133, 232]  # in $M
+non_oscar_movies = ["Slumdog Millionaire", "Avatar", "Inception", "Hugo", "Lincoln"]
+non_oscar_revenue = [378, 2788, 829, 185, 275]  # in $M
+
+width = 0.4
+x = np.arange(len(years))
+
+# plt.figure(figsize=(10, 6))
+plt.bar(x - width/2, oscar_revenue, width, label="Oscar Winner")
+plt.bar(x + width/2, non_oscar_revenue, width, label="Non-Oscar Hit")
+plt.title("oscar vs Non_oscar revenue")
+plt.xlabel("year")
+plt.ylabel("revenue $(M)")
+plt.style.use("dark_background")
+plt.legend()
