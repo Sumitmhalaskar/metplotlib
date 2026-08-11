@@ -1,0 +1,4 @@
+expence = ["salary","rent","marketin"]
+price = [500,300,200]
+colour = ["red","yellow","pink"]
+plt.pie(price , labels = expence , autopct = "%1.1f%%",colors = colour)
