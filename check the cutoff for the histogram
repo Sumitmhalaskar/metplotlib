@@ -1,0 +1,23 @@
+marks = [
+    25, 38, 42, 55, 61, 67, 72, 78, 83, 88,
+    91, 95, 47, 53, 59, 64, 69, 74, 79, 85,
+    92, 97, 33, 45, 58, 62, 71, 76, 81, 89
+]
+
+# custom bins
+bins = [0, 30, 70, 90, 100]
+plt.hist(
+    marks,
+    bins=bins,
+    edgecolor="black",
+    color="lightblue"
+)
+plt.title("avarage the student mark")
+plt.xlabel("mark")
+plt.ylabel("NUmber of the student")
+plt.axvline(
+    x = 33,
+    label = "passing mark line",
+    color = "red",
+    linewidth = "2"
+)
